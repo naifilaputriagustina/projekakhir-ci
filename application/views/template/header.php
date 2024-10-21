@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo base_url('assets/login.css')?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/admin.css')?>">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/beranda.css">
 </head>
-<body>
-    
+<body>  

@@ -1,55 +1,70 @@
 <style>
-
- 
-.login
+  
+    
+    .dftr
 {
-    background-color: rgb(89, 180, 184);
+    
     background-color: aliceblue;
     width: 350px;
     padding: 20px;
     margin: auto;
+    margin-top: 100px;
     border: 2px solid black;
-    margin-top: 50px;
     font-size: 18px;
+
 }
- 
-h1
-{
-    
-    text-align: center;
-    
-    padding: 10px;
+h1{
+        text-align: center;
+        
     border-radius: 7px;
 }
- 
-input
-{
-    width: 100%;
-    padding: 12px 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-}
- 
-input[type=submit]
-{
-    background-color: violet;
-    border-radius:18px;
-    color: white;
-} 
-</style>
-
-<div class="login">
-<h1>Tambah User</h1>
-<form action="<?= base_url() ?>daftar/simpan" method="POST">
+.dftr [type=text]{
+    width: 95%;
+    color: rgb(36, 35, 35);
+    padding: 6px 7px;
+    border-radius: 10px;
     
-    <input type="text" name="nama" placeholder="Masukkan Nama Lengkap">
-    <br><br>
-    <input type="text" name="username" placeholder="Masukkan Username">
-    <br><br>
-    <input type="password" name="password" placeholder="Masukkan Password">
-    <br><br>
+    border: none;
+    
+    
+    cursor: pointer;
+}
+.dftr [type=password] {
+    width: 95%;
+    color: rgb(36, 35, 35);
+    padding: 6px 7px;
+    border-radius: 10px;
+    
+    border: none;
+    
+    cursor: pointer;
+}
+.dftr [type=submit]{
+    width: 30%;
+    color: white;
+    padding: 6px 7px;
+    border-radius: 10px;
+    
+    border: none;
+    background-color:  violet;
+    cursor: pointer;
+}
+
+
+</style>
+<div class="dftr">
+<h1 class="h1d">Daftar</h1>
    
-    <br><br>
-    <input type="submit" value="SIMPAN">
-</form>
-</div>
+        <form action="daftar/tambah" method="POST">
+            <label for="">Nama</label>
+            <input type="text" name="nama" placeholder="Masukan Nama" required>
+            <br><br>
+            <label for="">Username</label>
+            <input type="text"  name="username" placeholder="Masukan User" required>
+            <br><br>
+            <label for="">Password</label>
+            <input type="password"  name="password" placeholder="Masukan Password" required>
+            <br><br>
+            <input type="submit" value="Simpan">
+        </form>
+        </div>

@@ -36,18 +36,26 @@ input[type=submit]
 }
 </style>
 
+
+
 <div class="login">
-<h1>halaman login</h1>
-<?= $this->session->flashdata('message'); ?>
-    <br>
-    <form action="<?= base_url() ?>login/verifikasi" method="POST">
-    <input type="text" placeholder="masukkan username" name="username"> 
-    <br> <br>
-    <input type="password" placeholder="masukkan password"  name="password">
-    <br> <br>
-    <input type="submit" value="LOGIN">
-    </form>
+<h2>selamat datang!</h2>
+            
+            <?= $this->session->flashdata('massage'); ?>
 
+            <form action="<?= base_url ()?>login/validasi" method="POST">
+                <label for="">Username :</label>
+                <input type="text" name="username" placeholder="Masukkan Username" required>
+                <br><br>
+                <label for="">Password :</label>
+                <input type="password" name="password" placeholder="Masukkan Password" required>
+                <br><br>
+                
+                <input type="submit" value="Login">
+                <br>
+                <br>
 
-<p>Belum Punya Akun ? <a  href="<?= base_url() ?>daftar">Daftar</a></p>
-</div>
+                <p>Belum punya akun? <a href="<?= base_url ('daftar')?>">Daftar</a></p>
+
+            </form>
+        </div>

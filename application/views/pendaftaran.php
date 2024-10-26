@@ -69,7 +69,7 @@ table th{
         <?php foreach ($pendaftaran as $dftr) : ?>
             <tr>
                 <td><?= $i; ?></td>
-                <td><?= $dftr['id_lomba']?></td>
+                <td><?= $dftr['nama_lomba']?></td>
                 <td><?= $dftr['nama_pendaftar']?></td>
                 <td><?= $dftr['kelas']?></td>
                 <td><?= $dftr['no_hp']?></td>

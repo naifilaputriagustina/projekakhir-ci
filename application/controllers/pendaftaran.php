@@ -3,11 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class pendaftaran extends CI_Controller {
 
-    public function __construct()
-    {
-        parent::__construct();
-        is_logged_in();
-    }
+    // public function __construct()
+    // {
+    //     parent::__construct();
+    //     is_logged_in();
+    // }
 
     public function index()
     {
@@ -18,7 +18,7 @@ class pendaftaran extends CI_Controller {
 
         $this->load->view('template/header');
         $this->load->view('template/menu');
-        $this->load->view('pendaftaran',$data);
+        $this->load->view('pendaftaran', $data);
         $this->load->view('template/footer');
     }
     public function hapus($id)
@@ -29,8 +29,8 @@ class pendaftaran extends CI_Controller {
     public function edit($id)
     {
         $this->load->model('pendaftaran_model');
-        $data['jenis_lomba'] = $this->db->get('jenis_lomba')->result_array();
-        
+
+        $data ['jenis_lomba']=$this->db->get('jenis_lomba')->result_array();
         $data['edit'] = $this->pendaftaran_model->getPendaftaranById($id);
 
 
@@ -43,6 +43,7 @@ class pendaftaran extends CI_Controller {
     {
         $data =
         [
+            // "id" => $this->input->post('id',true),
             "id_lomba" => $this->input->post('nama_lomba',true),
             "nama_pendaftar" => $this->input->post('nama_pendaftar',true),
             "kelas" => $this->input->post('kelas',true),

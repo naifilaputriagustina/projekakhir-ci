@@ -3,11 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class data_event extends CI_Controller {
 
-    public function __construct()
-    {
-        parent::__construct();
-        is_logged_in();
-    }
+    // public function __construct()
+    // {
+    //     parent::__construct();
+    //     is_logged_in();
+    // }
 
     public function index()
     {
@@ -22,7 +22,7 @@ class data_event extends CI_Controller {
     }
     public function hapus($id)
     {
-        $this->db->delete('jenis_lomba',['id' => $id]);
+        $this->db->delete('jenis_lomba',['id_jns' => $id]);
         redirect('data_event');
     }
     
@@ -47,7 +47,7 @@ class data_event extends CI_Controller {
         
         ];
 
-        $this->db->where('id',$this->input->post('id'));
+        $this->db->where('id_jns',$this->input->post('id_jns'));
         $this->db->update('jenis_lomba',$data);
         redirect('data_event');
     }

@@ -13,9 +13,7 @@
  
 h1
 {
-    
     text-align: center;
-    
     padding: 10px;
     border-radius: 7px;
 }

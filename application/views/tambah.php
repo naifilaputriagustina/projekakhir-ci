@@ -1,12 +1,18 @@
     <style>
+          body{
+	font-family: sans-serif;
+	background: #B9BBB6;
+          }
           .tambahc
 {
     
-    background-color: #7a17;
+    
     width: 350px;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
+
+    background: white;
     border: 2px solid black;
     font-size: 18px;
 
@@ -38,9 +44,9 @@
     color: white;
     padding: 6px 7px;
     border-radius: 10px;
-    
+    background-color: #363636;
     border: none;
-    background-color:  violet;
+    
     cursor: pointer;
 }
     </style>

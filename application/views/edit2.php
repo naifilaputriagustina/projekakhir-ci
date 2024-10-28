@@ -64,7 +64,7 @@ form{
 }
  
 input[type = "submit"]{
-	background: #46de4b;
+	background: #8b8989;
 	color: white;
 	font-size: 11pt;
 	width: 100%;

@@ -1,41 +1,51 @@
 <style>
-   .login
+          body{
+	font-family: sans-serif;
+	background:  #B9BBB6;
+          }
+.tambah
 {
-    background-color: rgb(89, 180, 184);
-    background-color: aliceblue;
-    width: 350px;
+    
+    
+    width: 400px;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
+
+    background: white;
     border: 2px solid black;
     font-size: 18px;
+
 }
- 
-h1
-{
+
+.tambah [type=text]{
+    width: 95%;
+    color: #7a1717;
+    padding: 6px 7px;
+    border-radius: 10px;
     
-    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.tambah [type=password] {
+    width: 95%;
+    color: #7a1717;
+    padding: 6px 7px;
+    border-radius: 10px;
     
-    padding: 10px;
-    border-radius: 7px;
+    border: none;
+    
+    cursor: pointer;
 }
- 
-.input
-{
-    margin: 0 auto;
-    width: 550px;
-   
-    box-sizing: border-box;
-    font-size: 18px;
-}
- 
-input[type=submit]
-{
-    padding: 12px 10px;
-    background-color: violet;
-    border-radius:18px;
+.tambah [type=submit]{
+    width: 30%;
     color: white;
-    width: 100px;
+    padding: 6px 7px;
+    border-radius: 10px;
+    background-color: #363636;
+    border: none;
+    
+    cursor: pointer;
 }
 </style>
 

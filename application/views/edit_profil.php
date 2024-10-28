@@ -20,71 +20,48 @@
     margin-left: 10px;
     font-size: 20px;
 }
-.login
 
-{
+    .login{
 
-background-color: white;
-
-width: 350px;
-
-padding: 20px;
-
-margin: auto;
-
-margin-top: 100px;
-
-border: 2px solid black;
-
-font-size: 18px;
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    font-size: 18px;
 
 }
-
- 
-
-h2
-
-{
-text-align: center;
-
-color: black;
-
-padding: 10px;
-
-border-radius: 7px;
-
+.form{
+    margin: 0 auto;
+    width: 150px;
 }
 
- 
+    h2{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    border-radius: 7px;
+}
 
 input
-
 {
-padding: 12px 10px;
-
-box-sizing: border-box;
-
-font-size: 18px;
-
+    
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
 }
-
  
-
 input[type=submit]
-
 {
-
-background-color: crimson;
-
-border-radius:18px;
-
-color: white;
-
+    background-color: crimson;
+    border-radius:18px;
+    color: white;
 }
 </style>
 
 
-<div class=""></div>
+<div class="form">
 <h2>Edit Profil</h2>
 <form action="<?= base_url() ?>profil/updateProfil" method="post">
     <input type="hidden" name="id" value="<?=$user['id']?>"><br><br>
@@ -93,3 +70,4 @@ color: white;
     <input type="password" name="password" value="<?=$user['password']?>"><br><br>
     <input type="submit" value="Edit Profil">
 </form>
+</div>
